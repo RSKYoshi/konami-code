@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="Eng">
+<head>
+  <title>Konami Code</title>
+  <link rel="stylesheet" href="css/konami.css">
+</head>
+<body id="body">
+  <nav id="img"><img class="rotate" id="logo" type="hidden" src="img/konamilogo2.webp" alt="img"></nav>
+  <form>
+    <label for="input"></label><input id="input" type="text" size="25" placeholder="&#8593 &#8593 &#8595 &#8595 &#8592 &#8594 &#8592 &#8594 b a 'enter'">
+  </form>
+  <audio id="sfx"><source src="sfx/KONAMI-PAUSE-SOUND-NES.mp3"></audio>
+
+<script>
+  "use strict";
+
+  //sequence to activate 30 lives
+  const seq = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter"
+
+  //need to push keypress into userInput
+  let userInput = "";
+
+  // this  is to capture the key and output to console
+  // document.addEventListener("keyup", function(event) {
+  //   console.log(event.key);
+  // });
+
+  // var image = new Image();
+  // image.src =“img/konamiController.webp”;
+  // document.body.appendChild(image);
+
+  function showImg(){
+    let img = document.getElementById("img");
+    img.style.display = "block";
+  }
+  function hideBox(){
+    let input = document.getElementById("input");
+    input.style.display = "none";
+  }
+  let soundEffect = document.getElementById("sfx");
+
+  function addUI(){
+    document.addEventListener("keyup", function(event) {
+      //code here to store keypress to userInput
+      //need to reference userInput
+      userInput+=event.key;
+      console.log(userInput)
+      if(userInput.includes(seq)){
+        soundEffect.play();
+        hideBox();
+        showImg();
+        // alert("You have added 30 lives!")
+      }
+    });
+  }
+  addUI();
+  //code to check if user input fulfills seq
+  // if(userInput === seq){
+  //   alert("You have added 30 lives!")
+  // }
+</script>
+</body>
+</html>
+
