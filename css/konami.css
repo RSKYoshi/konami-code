@@ -28,6 +28,7 @@
 }
 #input {
     display: block;
+    margin-left: 2vw;
 }
 #logo {
     margin-top: 5vh;
@@ -36,6 +37,17 @@
     border-radius: 30px;
     box-shadow: 0 0 7px 7px black;
 }
+
+#invisiDiv {
+    background-color: green;
+    margin-top: 77vh;
+    margin-right: 24.5vw;
+    margin-left: 25.3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
 /*#logo {*/
 /*    border-width: 3rem;*/
 /*    border-radius: 30px;*/
