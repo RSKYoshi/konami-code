@@ -11,7 +11,39 @@
     <label for="input"></label><input id="input" type="text" size="25" placeholder="&#8593 &#8593 &#8595 &#8595 &#8592 &#8594 &#8592 &#8594 b a 'enter'">
   </form>
   <audio id="sfx"><source src="sfx/KONAMI-PAUSE-SOUND-NES.mp3"></audio>
-
+  <div id="pressStart"></div>
+<!--  controller below here-->
+  <div id="controller">
+    <div id="directional-buttons">
+      <div className="middle"></div>
+      <div className="left"></div>
+      <div className="top"></div>
+      <div className="right"></div>
+      <div className="bottom"></div>
+    </div>
+    <div id="selections-buttons">
+      <div className="row"></div>
+      <div className="row"></div>
+      <div className="row">
+        <div className="select">select</div>
+        <div className="select-button"></div>
+        <div className="start">start
+          <div className="start-button"></div>
+        </div>
+      </div>
+      <div className="row bigger">
+      </div>
+      <div className="row"></div>
+    </div>
+    <div id="mainbuttons">
+      <div className="a-container">
+        <div className="a"></div>
+      </div>
+      <div className="b-container">
+        <div className="b"></div>
+      </div>
+    </div>
+  </div>
 <script>
   "use strict";
 
@@ -20,6 +52,16 @@
 
   //need to push keypress into userInput
   let userInput = "";
+
+
+
+  let pressStart = document.querySelector("#pressStart");
+  pressStart.addEventListener("click", showController)
+  function showController(){
+    //show a clickable controller div ontop of press Start area
+    alert("test");
+  }
+
 
   // this  is to capture the key and output to console
   // document.addEventListener("keyup", function(event) {
@@ -40,7 +82,7 @@
   }
   let soundEffect = document.getElementById("sfx");
 
-  function addUI(){
+  function addFunctionality(){
     document.addEventListener("keyup", function(event) {
       //code here to store keypress to userInput
       //need to reference userInput
@@ -54,15 +96,17 @@
       }
     });
   }
-  addUI();
+  addFunctionality();
   //code to check if user input fulfills seq
   // if(userInput === seq){
   //   alert("You have added 30 lives!")
   // }
+
+
+
+
 </script>
-<div id="invisiDiv">
-  here
-</div>
+
 </body>
 </html>
 
