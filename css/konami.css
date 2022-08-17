@@ -3,7 +3,7 @@
 /*for any screen 576px or less, the following styles will apply:
 Galaxy Note 10+ is 412px x 869px */
 
-@media screen and (max-width:577px) {
+@media screen and (max-width:700px) {
     .rotate {
         -moz-animation: spin-horizontal 5s infinite linear;
         -o-animation: spin-horizontal 5s infinite linear;
