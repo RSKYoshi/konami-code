@@ -3,7 +3,7 @@
 /*for any screen 576px or less, the following styles will apply:
 Galaxy Note 10+ is 412px x 869px */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .rotate {
         -moz-animation: spin-horizontal 5s infinite linear;
         -o-animation: spin-horizontal 5s infinite linear;
@@ -65,7 +65,7 @@ Galaxy Note 10+ is 412px x 869px */
 
 /*    konami controller here:*/
 #controller{
-    display: none;
+    display: block;
 }
     body{
         font-family: 'Open Sans', sans-serif;
