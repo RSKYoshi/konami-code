@@ -108,14 +108,14 @@ p a{
 
 #controller{
     text-align:center;
-            width:600px;
-            height:230px;
-            background-color:#616161;
-            border:12px solid #dcdede;
-            margin:90px auto 0 auto;
-            position:fixed;
-            top:54.3vh;
-            box-shadow:0 0 3px 0 rgba(0,0,0,.1)
+    width:600px;
+    height:230px;
+    background-color:#616161;
+    border:12px solid #dcdede;
+    margin:90px auto 0 auto;
+    position:fixed;
+    top:54.3vh;
+    box-shadow:0 0 3px 0 rgba(0,0,0,.1)
 }
 
 #mainbuttons{
