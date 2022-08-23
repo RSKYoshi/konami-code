@@ -13,7 +13,7 @@
   <audio id="sfx"><source src="sfx/KONAMI-PAUSE-SOUND-NES.mp3"></audio>
   <div id="pressStart"></div>
 <!--  controller below here-->
-  <div id="controller">
+  <div id="controller" type="hidden">
     <div id="directional-buttons">
       <div className="middle"></div>
       <div className="left"></div>
@@ -62,7 +62,7 @@
   function clickToShowController(){
     //show a clickable controller div ontop of press Start area
     alert("test");
-    soundEffect.play();
+    // soundEffect.play();
     showController();
     //need to toggle controller here
   }
@@ -71,6 +71,7 @@
   function showController(){
     let img = document.getElementById("controller");
     img.style.display = "block";
+    alert("This works!!");
   }
 
 
