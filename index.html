@@ -8,39 +8,40 @@
 <body id="body">
   <nav id="img"><img class="rotate" id="logo" type="hidden" src="img/konamilogo2.webp" alt="img"></nav>
   <form>
-    <label for="input"></label><input id="input" type="text" size="25" placeholder="&#8593 &#8593 &#8595 &#8595 &#8592 &#8594 &#8592 &#8594 b a 'enter'">
+    <label for="input"></label>
+    <input id="input" type="text" size="25" placeholder="&#8593 &#8593 &#8595 &#8595 &#8592 &#8594 &#8592 &#8594 b a 'enter'">
   </form>
   <audio id="sfx"><source src="sfx/KONAMI-PAUSE-SOUND-NES.mp3"></audio>
   <div id="pressStart"></div>
 <!--  controller below here-->
-  <div id="controller" type="hidden">
+  <div id="controller" class="hidden">
     <div id="directional-buttons">
-      <div className="middle"></div>
-      <div className="left"></div>
-      <div className="top"></div>
-      <div className="right"></div>
-      <div className="bottom"></div>
+      <div class="middle"></div>
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="right"></div>
+      <div class="bottom"></div>
     </div>
     <div id="selections-buttons">
-      <div className="row"></div>
-      <div className="row"></div>
-      <div className="row">
-        <div className="select">select</div>
-        <div className="select-button"></div>
-        <div className="start">start
-          <div className="start-button"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="select">select</div>
+        <div class="select-button"></div>
+        <div class="start">start
+          <div class="start-button"></div>
         </div>
       </div>
-      <div className="row bigger">
+      <div class="row bigger">
       </div>
-      <div className="row"></div>
+      <div class="row"></div>
     </div>
     <div id="mainbuttons">
-      <div className="a-container">
-        <div className="a"></div>
+      <div class="a-container">
+        <div class="a"></div>
       </div>
-      <div className="b-container">
-        <div className="b"></div>
+      <div class="b-container">
+        <div class="b"></div>
       </div>
     </div>
   </div>
@@ -57,22 +58,24 @@
 
 
 
+  let controller = document.getElementById("controller");
   let pressStart = document.querySelector("#pressStart");
   pressStart.addEventListener("click", clickToShowController)
   function clickToShowController(){
     //show a clickable controller div ontop of press Start area
-    alert("test");
+    // alert("test");
     // soundEffect.play();
-    showController();
+    // showController();
+    controller.classList.toggle("hidden");
     //need to toggle controller here
   }
 
 
-  function showController(){
-    let img = document.getElementById("controller");
-    img.style.display = "block";
-    alert("This works!!");
-  }
+  // function showController(){
+    // let img = document.querySelector("#controller");
+    // img.style.display = "block";
+    // alert("This works!!");
+  // }
 
 
 

@@ -17,6 +17,7 @@ Galaxy Note 10+ is 412px x 869px */
         transform: rotateY(360deg);
     }
 }
+
 #body {
     /*this is the  background gif*/
     background-image: url(../img/konami-start.gif);
@@ -60,12 +61,10 @@ Galaxy Note 10+ is 412px x 869px */
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
-
-/*    konami controller here:*/
-#controller{
-    /*display: block;*/
-    visibility: hidden;
+.hidden{
+    display: none;
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
     background:#a1d082;
@@ -116,7 +115,7 @@ p a{
     margin:90px auto 0 auto;
     position:fixed;
     top:54.3vh;
-    box-shadow:0 0 3px 0 rgba(0,0,0,.1)
+    box-shadow:0 0 3px 0 rgba(0,0,0,.1);
 }
 
 #mainbuttons{
