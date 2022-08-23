@@ -58,11 +58,20 @@
 
 
   let pressStart = document.querySelector("#pressStart");
-  pressStart.addEventListener("click", showController)
-  function showController(){
+  pressStart.addEventListener("click", clickToShowController)
+  function clickToShowController(){
     //show a clickable controller div ontop of press Start area
     alert("test");
+    showController();
+    //need to toggle controller here
   }
+
+
+  function showController(){
+    let img = document.getElementById("controller");
+    img.style.display = "block";
+  }
+
 
 
   // this  is to capture the key and output to console
@@ -74,7 +83,7 @@
   // image.src =“img/konamiController.webp”;
   // document.body.appendChild(image);
 
-  function showImg(){
+  function showKonamiSpin(){
     let img = document.getElementById("img");
     img.style.display = "block";
   }
@@ -93,7 +102,7 @@
       if(userInput.includes(seq)){
         soundEffect.play();
         hideBox();
-        showImg();
+        showKonamiSpin();
         // alert("You have added 30 lives!")
       }
     });
