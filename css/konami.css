@@ -110,12 +110,12 @@ p a{
 
 #controller{
     text-align:center;
-    width:600px;
-    height:300px;
+    width:700px;
+    height:325px;
     background-color:#616161;
     border:12px solid #dcdede;
     margin:90px auto 0 auto;
-    margin-left: 20vw;
+    margin-left: 14vw;
     position:fixed;
     top:64.3vh;
     box-shadow:0 0 3px 0 rgba(0,0,0,.1);
@@ -134,8 +134,8 @@ p a{
 }
 
 #mainbuttons .a, #mainbuttons .b{
-    width:60px;
-    height:60px;
+    width:75px;
+    height:75px;
     background:#eb3723;
     border-radius:50%;
     cursor:pointer;
@@ -205,20 +205,33 @@ p a{
     left:12px;
 }
 
-.start-button , .select-button{
+.start-button{
     position:absolute;
-    right:-6px;
-    width:70px;
+    right:20px;
+    width:64px;
     height:15px;
     background:#544848;
-    margin-top:45px;
+    margin-top:1vh;
     border-radius:15px;
     cursor:pointer;
 }
 
 .select-button{
-    left:12px;
+    left:-4px;
+    top:7.2vh;
+    position:absolute;
+    right:20px;
+    width:50px;
+    height:15px;
+    background:#544848;
+    margin-top:1vh;
+    border-radius:15px;
+    cursor:pointer;
 }
+/*.w-25{*/
+/*    width: 40%!important;*/
+/*}*/
+
 
 .start-button:active , .select-button:active{
     box-shadow:inset 0 0 12px 0 rgba(0,0,0,.9)
@@ -245,8 +258,8 @@ p a{
 #directional-buttons .top,
 #directional-buttons .bottom{
     position: absolute;
-    width: 30px;
-    height: 40px;
+    width: 38px;
+    height: 44px;
     /*background:#61616;*/
     border:4px solid #dcdede;
     cursor:pointer;
