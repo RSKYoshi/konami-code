@@ -61,8 +61,8 @@ Galaxy Note 10+ is 412px x 869px */
     padding-top: 8vh;
     padding-bottom: 5vh;
     height: 24vh;
-   
 }
+
 .hidden{
     display: none;
 }
@@ -305,6 +305,6 @@ p a{
 
 
 /*target mobile devices here */
-/*@media screen and (min-width: 200px) {*/
-/*
-/*}*/
+@media screen and (min-width: 200px) {
+
+}
