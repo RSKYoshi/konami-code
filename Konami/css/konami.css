@@ -23,6 +23,7 @@ Galaxy Note 10+ is 412px x 869px */
     background-image: url(../img/konami-start.gif);
     /*background-size: 105rem 971px;*/
     background-size: 100vw 100vh;
+    overflow: hidden;
 }
 
 #title {
