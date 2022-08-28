@@ -245,8 +245,8 @@ p a{
 
 #directional-buttons .middle{
     position:absolute;
-    top:26px;
-    left:4px;
+    top:35px;
+    left:0px;
     height:30px;
     width:30px;
     background:#484a49;
@@ -258,7 +258,7 @@ p a{
 #directional-buttons .top,
 #directional-buttons .bottom{
     position: absolute;
-    width: 38px;
+    width: 47px;
     height: 44px;
     /*background:#61616;*/
     border:4px solid #dcdede;
@@ -269,7 +269,7 @@ p a{
     transform:rotate(-90deg);
     transform-origin: center right;
     border-top: 0;
-    left: 22px;
+    left: 11px;
 
 }
 
@@ -281,15 +281,21 @@ p a{
 }
 
 #directional-buttons .bottom{
-    top:56px;
+    top:75px;
     border-top:0;
     z-index:1;
+    width: 53px;
+    margin-left: -16px;
 }
 
 #directional-buttons .top{
     border-bottom:0;
     z-index:1;
-    top:-18px;
+    top:-21px;
+    /*margin-left: -14px;*/
+    /*width: 58px;*/
+    width: 53px;
+    margin-left: -16px;
 }
 
 
