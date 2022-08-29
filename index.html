@@ -110,7 +110,9 @@
 
   document.addEventListener("touchend", function (e){
     if(userInput.includes(seq)){
-      soundEffect1.play();
+      while(!soundEffect1.play()){
+        soundEffect1.play();
+      }
       //make controller go away here
       hideController();
       showKonamiSpin();
