@@ -17,7 +17,8 @@
   <div id="controller" class="hidden">
     <div id="directional-buttons">
       <div class="middle"></div>
-      <div id="left-directional" class="left" ontouchend ="showKonamiSpin(), soundEffect.play()" ></div>
+<!--      <div id="left-directional" class="left" ontouchend ="showKonamiSpin(), soundEffect1.play()" ></div>-->
+      <div id="left-directional" class="left"></div>
       <div id="up-directional" class="top"></div>
       <div id="right-directional" class="right"></div>
       <div id="down-directional" class="bottom"></div>
@@ -49,20 +50,82 @@
 
 <script>
   "use strict";
-
+  //need to push any keypress into userInput
+  let userInput = "";
   //sequence to activate 30 lives
   const seq = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter";
-  const seqConversion = "";
+  const soundEffect1 = document.getElementById("sfx");
 
-  //need to push keypress into userInput
-  let userInput = "";
+
+
+  //need to add event listeners to all divs for the controller buttons.
+  //each button will equal corresponding keyboard presses
+  //utilize existing function 'addFunctionality' to listen for the correct sequence
+
+  const lBtn = document.getElementById('left-directional');
+  lBtn.addEventListener("touchend", convertToLeft);
+  function convertToLeft(){
+    userInput+="ArrowLeft"
+    console.log(userInput);
+  }
+
+  const rBtn = document.getElementById('right-directional');
+  rBtn.addEventListener("touchend", convertToRight);
+  function convertToRight(){
+    userInput+="ArrowRight"
+    console.log(userInput);
+  }
+  const uBtn = document.getElementById('up-directional');
+  uBtn.addEventListener("touchend", convertToUp);
+  function convertToUp(){
+    userInput+="ArrowUp"
+    console.log(userInput);
+  }
+  const dBtn = document.getElementById('down-directional');
+  dBtn.addEventListener("touchend", convertToDown);
+  function convertToDown(){
+    userInput+="ArrowDown"
+    console.log(userInput);
+  }
+  const stBtn = document.getElementById('start-button');
+  stBtn.addEventListener("touchend", convertToEnter);
+  function convertToEnter(){
+    userInput+="Enter"
+    console.log(userInput);
+  }
+  const aBtn = document.getElementById('a-button');
+  aBtn.addEventListener("touchend", convertToA);
+  function convertToA(){
+    userInput+="a"
+    console.log(userInput);
+  }
+  const bBtn = document.getElementById('b-button');
+  bBtn.addEventListener("touchend", convertToB);
+  function convertToB(){
+    userInput+="b"
+    console.log(userInput);
+  }
+
+
+  document.addEventListener("touchend", function (e){
+    if(userInput.includes(seq)){
+      soundEffect1.play();
+      showKonamiSpin();
+    }
+  })
+
+
+
+
+
+
 
   let controller = document.getElementById("controller");
   let pressStart = document.querySelector("#pressStart");
   pressStart.addEventListener("click", clickToShowController)
   function clickToShowController(){
     //show a clickable controller div ontop of press Start area
-    // soundEffect.play();
+    // soundEffect1.play();
     controller.classList.toggle("hidden");
   }
 
@@ -91,7 +154,6 @@
     let input = document.getElementById("input");
     input.style.display = "none";
   }
-  let soundEffect = document.getElementById("sfx");
 
   function addFunctionality(){
     //this adds a listener for anything typed into the entire body
@@ -99,10 +161,10 @@
       //code here to store keypress to userInput
       //need to reference userInput
       userInput+=event.key;
-      console.log(userInput)
+      // console.log(userInput)
       if(userInput.includes(seq)){
-        soundEffect.play();
-        hideBox();
+        soundEffect1.play();
+        // hideBox();
         showKonamiSpin();
         // alert("You have added 30 lives!")
       }
