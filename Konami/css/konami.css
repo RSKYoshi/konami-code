@@ -116,21 +116,21 @@ p a{
 
 #controller{
     text-align:center;
-    width:330px;
-    height:180px;
+    width:90vw;
+    height:22vh;
     background-color:#616161;
     border:12px solid #dcdede;
     margin:90px auto 0 auto;
-    margin-left: 6vw;
+    /*margin-left: 6vw;*/
     position:fixed;
     top:53.3vh;
     box-shadow:0 0 3px 0 rgba(0,0,0,.1);
 }
 
 #mainbuttons{
-    position:absolute;
-    bottom:32px;
-    right:32px;
+    position: absolute;
+    bottom: 1vh;
+    right: 2vw;
 }
 
 #mainbuttons .a-container, #mainbuttons .b-container{
@@ -140,8 +140,8 @@ p a{
 }
 
 #mainbuttons .a, #mainbuttons .b{
-    width:75px;
-    height:75px;
+    width:9vw;
+    height:5vh;
     background:#eb3723;
     border-radius:50%;
     cursor:pointer;
@@ -156,17 +156,22 @@ p a{
 }
 
 #mainbuttons .a::after, #mainbuttons .b::after{
-    position:absolute;
-    bottom:-20px;
-    text-transform:uppercase;
-    color:#eb3723;
-    font-family:arial;
-    font-weight:bold;
+    position: absolute;
+    bottom: -20px;
+    text-transform: uppercase;
+    color: #eb3723;
+    font-family: arial;
+    font-weight: bold;
+    color: black;
+    left: 13.3vw;
+    height: 6.5vh;
 }
 
 #mainbuttons .a::after{
-    content:'a';;
-    left:54px;
+    content: 'a';
+    left: 4.3vw;
+    color: black;
+    height: 6.5vh;
 }
 
 #mainbuttons .b::after{
@@ -177,33 +182,35 @@ p a{
 #selections-buttons{
     display:inline-block;
     position:relative;
-    right:7px;
+    /*right:7px;*/
+    width: 33vw;
 }
 
 #selections-buttons .row{
     margin-bottom:10px;
-    width:180px;
-    height:30px;
+    width:35vw;
+    height:1.7vh;
     background:#d1d1d1;
     border-radius:12px;
 }
 
 .bigger{
-    height:73px !important;
+    height:5vh !important;
 }
 
 .select , .start{
-    text-transform:uppercase;
-    color:#eb3723;
-    font-weight:bold;
-    display:inline-block;
-    margin-top:5px;
-    letter-spacing:1px;
+    text-transform: uppercase;
+    color: #eb3723;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 0;
 }
 
 .select{
     position:relative;
-    right:12px;
+    right:2vw;
 }
 
 .start{
@@ -212,31 +219,28 @@ p a{
 }
 
 .start-button{
-    position:absolute;
-    right:-2px;
-    width:64px;
-    height:25px;
-    background:#544848;
-    margin-top:1vh;
-    border-radius:15px;
-    cursor:pointer;
-    top: 44px;
+    position: absolute;
+    right: 2vw;
+    width: 13vw;
+    height: 2.06vh;
+    background: #544848;
+    margin-top: 1vh;
+    border-radius: 7vw;
+    cursor: pointer;
+    top: 3vh;
 }
 
 .select-button{
-    left:10px;
-    top:130px;
-    position:absolute;
-    right:20px;
-    width:64px;
-    height:25px;
-    background:#544848;
-    margin-top:0.94vh;
-    border-radius:15px;
-    cursor:pointer;
-
-
-
+    left: 1vw;
+    top: 8.8vh;
+    position: absolute;
+    /* right: 20px; */
+    width: 14vw;
+    height: 2.1vh;
+    background: #544848;
+    margin-top: 0.94vh;
+    border-radius: 7vw;
+    cursor: pointer;
 }
 /*.w-25{*/
 /*    width: 40%!important;*/
@@ -254,13 +258,13 @@ p a{
 }
 
 #directional-buttons .middle{
-    position:absolute;
-    top:35px;
-    left:-3px;
-    height:35px;
-    width:35px;
-    background:#484a49;
-    border-radius:50%;
+    position: absolute;
+    top: -3.2vh;
+    left: -8vw;
+    height: 3vh;
+    width: 7vw;
+    background: #484a49;
+    border-radius: 50%;
 }
 
 #directional-buttons .left ,
@@ -268,44 +272,45 @@ p a{
 #directional-buttons .top,
 #directional-buttons .bottom{
     position: absolute;
-    width: 47px;
-    height: 44px;
-    /*background:#61616;*/
-    border:4px solid #dcdede;
-    cursor:pointer;
+    width: 8vw;
+    height: 3.7vh;
+    border: 4px solid #dcdede;
+    cursor: pointer;
 }
 
 #directional-buttons .right{
-    transform:rotate(-90deg);
+    transform: rotate(-90deg);
     transform-origin: center right;
     border-top: 0;
-    left: 11px;
+    left: -6.2vw;
+    top: -6vh;
 
 }
 
 #directional-buttons .left{
-    right:-16px;
-    transform:rotate(90deg);
-    transform-origin:center left;
-    border-top:0;
+    right: 3vw;
+    transform: rotate(90deg);
+    transform-origin: center left;
+    border-top: 0;
+    top: -6vh;
 }
 
 #directional-buttons .bottom{
-    top:75px;
-    border-top:0;
-    z-index:1;
-    width: 53px;
-    margin-left: -16px;
+    top: 0.8vh;
+    border-top: 0;
+    z-index: 1;
+    width: 8vw;
+    margin-left: -9.6vw;
 }
 
 #directional-buttons .top{
-    border-bottom:0;
-    z-index:1;
-    top:-21px;
-    /*margin-left: -14px;*/
-    /*width: 58px;*/
-    width: 53px;
-    margin-left: -16px;
+    border-bottom: 0;
+    z-index: 1;
+    top: -8vh;
+    /* margin-left: -14px; */
+    /* width: 58px; */
+    width: 8vw;
+    margin-left: -9.6vw;
 }
 
 
