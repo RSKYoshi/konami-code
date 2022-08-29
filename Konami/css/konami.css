@@ -49,7 +49,7 @@ Galaxy Note 10+ is 412px x 869px */
 /*this is the spinning thing*/
 #spinning-logo {
     margin-top: 5vh;
-    margin-left: 11%;
+    margin-left: 9%;
     border-width: 3rem;
     border-radius: 30px;
     box-shadow: 0 0 7px 7px black;
@@ -320,7 +320,248 @@ p a{
 }
 
 
-/*target mobile devices here */
-@media screen and (min-width: 200px) {
+/*target mobile devices landscape here */
+@media screen and (orientation:landscape)
+and (min-device-width: 319px)
+and (max-device-width: 850px) {
+    /* Your CSS Here*/
+    h1{
+        top:52px;
+        height:auto;
+        border-top:3px solid #fff;
+        border-bottom:3px solid #fff;
+        padding:17px 0;
+        text-align:left;
+        font-weight:bold;
+        font-size:18px;
+        letter-spacing:1.5px;
+        text-transform:uppercase;
+    }
 
+    p , h1{
+        margin:0 auto;
+        width:625px;
+        color:#fff;
+        display:block;
+        position:relative;
+    }
+
+    p{
+        top:42px;
+        text-align:center;
+        border:1px solid rgba(255,255,255,.3);
+        padding:16px 0;
+        text-shadow:0 1px 0 rgba(0,0,0,.2);
+    }
+
+    p a{
+        color:#eb3723;
+        text-decoration:none;
+        text-shadow:0 1px 0 rgba(255,255,255,.3)
+    }
+
+    #controller{
+        text-align:center;
+        width:700px;
+        height:325px;
+        background-color:#616161;
+        border:12px solid #dcdede;
+        margin:90px auto 0 auto;
+        margin-left: 14vw;
+        position:fixed;
+        top:-3.7vh;
+        box-shadow:0 0 3px 0 rgba(0,0,0,.1);
+    }
+
+    #mainbuttons{
+        position:absolute;
+        bottom:32px;
+        right:32px;
+    }
+
+    #mainbuttons .a-container, #mainbuttons .b-container{
+        background:#dcdede;
+        display:inline-block;
+        padding:5px;
+    }
+
+    #mainbuttons .a, #mainbuttons .b{
+        width:75px;
+        height:75px;
+        background:#eb3723;
+        border-radius:50%;
+        cursor:pointer;
+    }
+
+    #mainbuttons .a:hover, #mainbuttons .b:hover{
+        box-shadow: inset 0 0 28px 2px #f46c5d;
+    }
+
+    #mainbuttons .a:active, #mainbuttons .b:active{
+        box-shadow: inset 0 0 28px 2px rgba(0,0,0,.5)
+    }
+
+    #mainbuttons .a::after, #mainbuttons .b::after{
+        position:absolute;
+        bottom:-20px;
+        text-transform:uppercase;
+        color:#eb3723;
+        font-family:arial;
+        font-weight:bold;
+    }
+
+    #mainbuttons .a::after{
+        content:'a';;
+        left:54px;
+    }
+
+    #mainbuttons .b::after{
+        content:'b';
+        right:2px;
+    }
+
+    #selections-buttons{
+        display:inline-block;
+        position:relative;
+        right:7px;
+    }
+
+    #selections-buttons .row{
+        margin-bottom:10px;
+        width:180px;
+        height:30px;
+        background:#d1d1d1;
+        border-radius:12px;
+    }
+
+    .bigger{
+        height:73px !important;
+    }
+
+    .select , .start{
+        text-transform:uppercase;
+        color:#eb3723;
+        font-weight:bold;
+        display:inline-block;
+        margin-top:5px;
+        letter-spacing:1px;
+    }
+
+    .select{
+        position:relative;
+        right:12px;
+    }
+
+    .start{
+        position:relative;
+        left:12px;
+    }
+
+    .start-button{
+        position:absolute;
+        right:-2px;
+        width:64px;
+        height:25px;
+        background:#544848;
+        margin-top:1vh;
+        border-radius:15px;
+        cursor:pointer;
+        top: 44px;
+    }
+
+    .select-button{
+        left:10px;
+        top:130px;
+        position:absolute;
+        right:20px;
+        width:64px;
+        height:25px;
+        background:#544848;
+        margin-top:0.94vh;
+        border-radius:15px;
+        cursor:pointer;
+
+
+
+    }
+    /*.w-25{*/
+    /*    width: 40%!important;*/
+    /*}*/
+
+
+    .start-button:active , .select-button:active{
+        box-shadow:inset 0 0 12px 0 rgba(0,0,0,.9)
+    }
+
+    #directional-buttons{
+        position:absolute;
+        top:90px;
+        left:80px;
+    }
+
+    #directional-buttons .middle{
+        position:absolute;
+        top:35px;
+        left:-3px;
+        height:35px;
+        width:35px;
+        background:#484a49;
+        border-radius:50%;
+    }
+
+    #directional-buttons .left ,
+    #directional-buttons .right,
+    #directional-buttons .top,
+    #directional-buttons .bottom{
+        position: absolute;
+        width: 47px;
+        height: 44px;
+        /*background:#61616;*/
+        border:4px solid #dcdede;
+        cursor:pointer;
+    }
+
+    #directional-buttons .right{
+        transform:rotate(-90deg);
+        transform-origin: center right;
+        border-top: 0;
+        left: 11px;
+
+    }
+
+    #directional-buttons .left{
+        right:-16px;
+        transform:rotate(90deg);
+        transform-origin:center left;
+        border-top:0;
+    }
+
+    #directional-buttons .bottom{
+        top:75px;
+        border-top:0;
+        z-index:1;
+        width: 53px;
+        margin-left: -16px;
+    }
+
+    #directional-buttons .top{
+        border-bottom:0;
+        z-index:1;
+        top:-21px;
+        /*margin-left: -14px;*/
+        /*width: 58px;*/
+        width: 53px;
+        margin-left: -16px;
+    }
+
+
+    #directional-buttons .left:active , #directional-buttons .right:active , #directional-buttons .bottom:active{
+        box-shadow:inset 0 -11px 8px 0px rgba(0,0,0,.3);
+        /*box-shadow:inset 0 -11px 8px 0px rgba(0,0,0,.3);*/
+        /*box-shadow:inset 0 -11px 8px 0px rgba(0,0,0,.3);*/
+    }
+
+    #directional-buttons .top:active{
+        box-shadow:inset 0 11px 8px 0px rgba(0,0,0,.3);
+    }
 }
