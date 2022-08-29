@@ -116,14 +116,14 @@ p a{
 
 #controller{
     text-align:center;
-    width:700px;
-    height:325px;
+    width:330px;
+    height:180px;
     background-color:#616161;
     border:12px solid #dcdede;
     margin:90px auto 0 auto;
-    margin-left: 14vw;
+    margin-left: 6vw;
     position:fixed;
-    top:64.3vh;
+    top:53.3vh;
     box-shadow:0 0 3px 0 rgba(0,0,0,.1);
 }
 
@@ -318,7 +318,7 @@ p a{
 #directional-buttons .top:active{
     box-shadow:inset 0 11px 8px 0px rgba(0,0,0,.3);
 }
-
+/*//end controller here */
 
 /*target mobile devices landscape here */
 @media screen and (orientation:landscape)
