@@ -26,12 +26,12 @@ Galaxy Note 10+ is 412px x 869px */
     overflow: hidden;
 }
 
-#title {
-    /*this is the  spinning thing*/
-    background-image: url(../img/Konami1986.png);
-    color: silver;
-    size: 0;
-}
+/*#title {*/
+/*    !*this is the  spinning thing*!*/
+/*    background-image: url(../img/Konami1986.png);*/
+/*    color: silver;*/
+/*    size: 0;*/
+/*}*/
 
 #input {
     background: silver;
@@ -46,7 +46,8 @@ Galaxy Note 10+ is 412px x 869px */
     margin-left: 2vw;
 }
 
-#logo {
+/*this is the spinning thing*/
+#spinning-logo {
     margin-top: 5vh;
     margin-left: 11%;
     border-width: 3rem;
@@ -54,6 +55,7 @@ Galaxy Note 10+ is 412px x 869px */
     box-shadow: 0 0 7px 7px black;
 }
 
+/*this is the invisible div for the click action*/
 #pressStart {
     /*background-color: green;*/
     margin-top: 72vh;
@@ -68,11 +70,13 @@ Galaxy Note 10+ is 412px x 869px */
     display: none;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    background:#a1d082;
-    user-select:none;
-}
+
+/*controller here */
+/*body{*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    background:#a1d082;*/
+/*    user-select:none;*/
+/*}*/
 
 h1{
     top:52px;
