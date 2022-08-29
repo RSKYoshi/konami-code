@@ -46,6 +46,10 @@ Galaxy Note 10+ is 412px x 869px */
     margin-left: 2vw;
 }
 
+#codeHint {
+    height: 5vh !important;
+}
+
 /*this is the spinning thing*/
 #spinning-logo {
     margin-top: 5vh;
@@ -164,14 +168,14 @@ p a{
     font-weight: bold;
     color: black;
     left: 13.3vw;
-    height: 6.5vh;
+    height: 6.8vh;
 }
 
 #mainbuttons .a::after{
     content: 'a';
     left: 4.3vw;
     color: black;
-    height: 6.5vh;
+    /*height: 6.8vh;*/
 }
 
 #mainbuttons .b::after{
@@ -206,6 +210,7 @@ p a{
     margin-top: 0px;
     /* letter-spacing: 1px; */
     letter-spacing: 0;
+    font-size: 3.5vw;
 }
 
 .select{
@@ -220,7 +225,7 @@ p a{
 
 .start-button{
     position: absolute;
-    right: 2vw;
+    right: -0.6vw;
     width: 13vw;
     height: 2.06vh;
     background: #544848;
@@ -232,7 +237,7 @@ p a{
 
 .select-button{
     left: 1vw;
-    top: 8.8vh;
+    top: 8.92vh;
     position: absolute;
     /* right: 20px; */
     width: 14vw;
