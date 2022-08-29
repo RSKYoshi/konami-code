@@ -220,12 +220,12 @@ p a{
     margin-top:1vh;
     border-radius:15px;
     cursor:pointer;
-    top: 2vh;
+    top: 44px;
 }
 
 .select-button{
     left:10px;
-    top:6.2vh;
+    top:130px;
     position:absolute;
     right:20px;
     width:64px;
