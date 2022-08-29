@@ -53,6 +53,7 @@ Galaxy Note 10+ is 412px x 869px */
     border-width: 3rem;
     border-radius: 30px;
     box-shadow: 0 0 7px 7px black;
+    width: 80vw;
 }
 
 /*this is the invisible div for the click action*/
