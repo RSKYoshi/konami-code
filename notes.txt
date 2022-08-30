@@ -1,0 +1,22 @@
+git push origin main
+git checkout -v/b "bm"
+git branch
+(if true) ? "true":"false";	ternary
+fixed.value = Literals
+var.value = variable
+console.log();
+regular Expression
+debounce
+for rTotal = total - discount
+if(!true) {return false}
+else if (n%2 ==0){
+return true;
+}
+else{return false;}
+arr1.forEach(()=> {});
+names.forEach(names => names);
+`${variable}`;
+fizzbuzz
+fibonachi
+async
+defer
