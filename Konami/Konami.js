@@ -56,12 +56,16 @@ function convertToB(){
 }
 document.addEventListener("touchend", function (e){
     if(userInput.includes(seq)){
-        do{
-            soundEffect1.play();
-        }while(1<0);
+        // do{
+        //     soundEffect1.play();
+        // } while(1<0);
         //make controller go away here
         hideController();
         showKonamiSpin();
+        soundEffect1.play();
+    }
+    else {
+        console.log(userInput);
     }
 })
 
