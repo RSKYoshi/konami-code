@@ -47,7 +47,7 @@ Galaxy Note 10+ is 412px x 869px */
 }
 
 #codeHint {
-    height: 5vh !important;
+    color: aqua;
 }
 
 /*this is the spinning thing*/
@@ -237,10 +237,10 @@ p a{
 
 .select-button{
     left: 1vw;
-    top: 8.92vh;
+    top: 9.1vh;
     position: absolute;
     /* right: 20px; */
-    width: 14vw;
+    width: 14.6vw;
     height: 2.1vh;
     background: #544848;
     margin-top: 0.94vh;
