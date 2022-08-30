@@ -1,43 +1,42 @@
 "use strict";
-const wKey = document.getElementById("w-Key");
-const aKey = document.getElementById("a-key");
-const sKey = document.getElementById("s-key");
-const dKey = document.getElementById("d-key");
-const rKey = document.getElementById("r-key");
-const shiftKey = document.getElementById("shift-key");
-const ctrlKey = document.getElementById("ctrl-key");
-const spaceKey = document.getElementById("space-key");
-const chatKey = document.getElementById("chat-key");
-wKey.addEventListener("keypress", function wKey(params) {
-    
-})
-aKey.addEventListener("keypress", function aKey(params) {
-    
-})
-sKey.addEventListener("keypress", function sKey(params) {
-    
-})
-dKey.addEventListener("keypress", function dKey(params) {
-    
-})
-rKey.addEventListener("keypress", function rKey(params) {
-    
-})
-shiftKey.addEventListener("keypress", function shiftKey(params) {
-    
-})
-ctrlKey.addEventListener("keypress", function ctrlKey(params) {
-    
-})
-spaceKey.addEventListener("keypress", function spaceKey(params) {
-    
-})
-chatKey.addEventListener("keypress", function chatKey(params) {
-    
-})
-do {
-    move
-} while (KeyPressed);
+// const wKey = document.getElementById("w-Key");
+// const aKey = document.getElementById("a-key");
+// const sKey = document.getElementById("s-key");
+// const dKey = document.getElementById("d-key");
+// const rKey = document.getElementById("r-key");
+// const shiftKey = document.getElementById("shift-key");
+// const ctrlKey = document.getElementById("ctrl-key");
+// const spaceKey = document.getElementById("space-key");
+// const chatKey = document.getElementById("chat-key");
+// wKey.addEventListener("keypress", function wKey(params) {
+//
+// })
+// aKey.addEventListener("keypress", function aKey(params) {
+//
+// })
+// sKey.addEventListener("keypress", function sKey(params) {
+//
+// })
+// dKey.addEventListener("keypress", function dKey(params) {
+//
+// })
+// rKey.addEventListener("keypress", function rKey(params) {
+//
+// })
+// shiftKey.addEventListener("keypress", function shiftKey(params) {
+// })
+// ctrlKey.addEventListener("keypress", function ctrlKey(params) {
+//
+// })
+// spaceKey.addEventListener("keypress", function spaceKey(params) {
+//
+// })
+// chatKey.addEventListener("keypress", function chatKey(params) {
+//
+// })
+// do {
+//     move
+// } while (KeyPressed);
 
        const cheatCode = "ArrowUp,ArrowUp,ArrowDown,ArrowDown,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,b,a,Enter";
         const sercret = "v,e,n,u,s,Enter";
