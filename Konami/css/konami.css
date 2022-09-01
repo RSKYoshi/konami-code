@@ -124,8 +124,10 @@ p a{
    	right:2px;
 }
 #selections-buttons{
-   	display:inline-block;
-   	position:relative;
+    display: inline-block;
+    position: relative;
+    top: 73px;
+    width: 176px;
 }
 .row{
    	margin-bottom: 10px;
@@ -173,6 +175,9 @@ p a{
     border: 4px solid #dcdede;
     cursor: pointer;
 }
+
+
+
 .right{
     transform: rotate(-90deg);
     transform-origin: center right;
@@ -190,6 +195,7 @@ p a{
 .top{
     border-bottom: 0;
     z-index: 1;
+
 }
 .left:active , .right:active , .bottom:active{
     box-shadow:inset 0 -11px 8px 0px rgba(0,0,0,.3);
@@ -264,7 +270,7 @@ p a{
         height: 44px;
     }
     .right{
-        left: 11px;
+        left: -55vw;
     }
     .left{
         right:-16px;
