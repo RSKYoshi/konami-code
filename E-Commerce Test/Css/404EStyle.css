@@ -1,0 +1,13 @@
+/* META */
+ html 
+	 {
+  		background-color: #00a690;
+  		background-image:
+    	repeating-linear-gradient(120deg, #30b193, #30b193 1px, transparent 1px, transparent 60px),
+    	repeating-linear-gradient(60deg, #30b193, #30b193 1px, transparent 1px, transparent 60px),
+    	linear-gradient(60deg, #259273 25%, transparent 25%, transparent 75%, #259273 75%, #259273),
+    	linear-gradient(120deg, #259273 25%, transparent 25%, transparent 75%, #259273 75%, #259273);
+  		background-size: 70px 120px;
+	 }
+ body
+	{ text-align: center; }

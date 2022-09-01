@@ -1,0 +1,52 @@
+	/*
+	#00a690 //dark green
+	#30b193 //light green
+	#259273 //dotted line
+	#ffc66c //star 
+	#cfe2ef //bimus header 
+	*/
+ html 
+{
+  background-color: #00a690;
+  background-image:
+    repeating-linear-gradient(120deg, #30b193, #30b193 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, #30b193, #30b193 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, #259273 25%, transparent 25%, transparent 75%, #259273 75%, #259273),
+    linear-gradient(120deg, #259273 25%, transparent 25%, transparent 75%, #259273 75%, #259273);
+  background-size: 70px 120px;
+}
+img{width: 2%;}
+
+
+/*
+CSS Grid System Setup
+
+	{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-area: 
+	"rnd-temp-header rnd-temp-header"
+	"rnd-temp-header ."
+	". ."
+	". ."
+	". ."
+	;}
+	{
+	grid-column-start: 1 ;
+	grid-column-end: 3 ;
+	}
+	{
+	grid-area: rnd-temp-header;
+	}
+
+
+
+
+
+
+
+
+
+
+*/

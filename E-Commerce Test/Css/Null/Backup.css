@@ -1,0 +1,263 @@
+/* META */
+:root
+	 {
+	 	--dg: #00a690;
+	 	--l-green: #30b193; 
+		--d-line: #259273;
+		--star: #ffc66c; 
+	 }
+ html 
+	 {
+  		background-color: var(--dg);
+  		background-image:
+    	repeating-linear-gradient(120deg, #30b193, #30b193 1px, transparent 1px, transparent 60px),
+    	repeating-linear-gradient(60deg, #30b193, #30b193 1px, transparent 1px, transparent 60px),
+    	linear-gradient(60deg, #259273 25%, transparent 25%, transparent 75%, #259273 75%, #259273),
+    	linear-gradient(120deg, #259273 25%, transparent 25%, transparent 75%, #259273 75%, #259273);
+  		background-size: 70px 120px;
+		height: 100%;
+	 }
+ body
+ 	 {
+ 	 	padding: 0;
+ 	 	margin: 0;
+ 	 	height: 100%;
+ 	 }
+ ul
+ 	 {
+ 		list-style: none;
+ 	 }
+ a
+ 	 {
+ 	 	text-decoration: none;
+		color:black;
+ 	 }
+ hr
+ 	 {
+ 	 	height: calc(90vh - 30vh);
+ 	 	width: 100%;
+ 	 	line-height: 0%;
+ 	 }
+ *::selective
+ 	 {
+ 	 	background-color: lightgreen;
+ 	 }
+ /* END OF META CSS CODE */
+/* HEADER */
+ header
+	 {   
+		background-color: #cfe2ef;
+		margin: auto;
+		height: 10vh;
+		padding-bottom: 0;
+		display: block;
+	 }
+ .header-left
+ 	 {
+ 	 	float: left;
+ 	 	width: 35%;
+ 	 }
+ .logo img
+	 {
+		display: inline-block;
+		height: 10vh;
+	 }
+ .header-middle
+ 	 {
+ 	 	display: inline-block;
+ 	 	width: 40%;
+ 	 	margin: auto;
+ 	 }
+ .header-right
+ 	 {
+ 	 	margin-top: 10px;
+ 	 	float: right;
+ 	 	width: 10%;
+ 	 	display: block;
+ 	 }
+ .dropbtn:hover .dropdown-content 
+	 {
+		display: block;
+	 }
+ .dropbtn
+	 {
+  		background-color: #00a690;
+  		color: white;
+  		padding: 16px;
+  		margin-right: 50%;
+  		width: 40%;
+  		font-size: 16px;
+  		border: none;
+  		text-align: center;
+  		display: block;
+	 }
+ .dropdown-content
+	 {
+		display: none;
+		top: 1%;
+		right: 10%;
+		position: absolute;
+  		text-align: left;
+  		background-color: #30b193;
+  		min-width: 160px;
+  		z-index: 1;
+	 }
+ .dropdown-content a
+	 {
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+	 }
+ .dropdown-content a:hover
+	 {
+		background-color: #00a690;
+		color: white;
+	 }
+ /* END OF HEADER */
+/* MAIN */
+ div.Lbtn
+ 	 {
+ 	 	display: inline-block;
+ 	 	width: 5%;
+ 	 	float: left;
+ 	 	margin: auto;
+ 	 	text-align: center;
+ 	 }
+ div.Rbtn
+ 	 {
+ 	 	display: inline-block;
+ 	 	width: 5%;
+ 	 	float: right;
+ 	 	margin: auto;
+ 	 }
+ div.Lbtn i:hover
+ 	 {
+ 	 	color: gray;
+ 	 }
+ div.Rbtn i:hover
+  	 {
+ 	 	color: gray;
+ 	 }
+ div.featured
+ 	 {
+ 	 	display: block;
+ 	 	width: 85%;
+ 	 	min-height: 500px;
+ 	 	margin: auto;
+ 	 	background-color: #af0a0a;
+ 	 }
+ .mySlides
+ 	 {
+  		display: none;
+	 }
+ .dot:hover {background-color: #000;} 
+ .dot
+ 	 {
+  		cursor: pointer;
+  		height: 15px;
+  		width: 15px;
+  		margin: 0 2px;
+  		background-color: #bbb;
+  		border-radius: 50%;
+  		display: inline-block;
+	 }
+ .active{ background-color: purple; }
+ div.products
+ 	 {
+ 	 	text-align: center;
+ 	 	margin: auto;
+ 	 }
+ /* END OF MAIN */
+/*FOOTER*/
+ /*  Begining of Prime FOOTER CSS CODE   */
+ footer
+ 	 { 
+ 	 	background-color: rgba(0,0,0,0.5);
+ 	 	display: flex;
+ 	 	bottom: 0; 
+ 	 	max-height: 30vh;
+ 	 	width: 100%;
+ 	 }
+ /*  Ending of Prime FOOTER CSS CODE    */
+ /*  Begining of FOOTER1 CSS CODE      */
+ .footer1
+ 	 {
+ 	 	width: 35%;
+ 	 }
+ .footer1 ul
+	 {
+		align-content: left;
+		display: inline-block;
+		font-size: 30px;
+	 }
+ /*  Ending of FOOTER1 CSS CODE    */
+ /*  Begining of MAILINGLIST CSS CODE      */
+ div.mailinglist
+	 {
+		width: 35%;
+		float: right;
+		text-align: center;
+	 }
+ input.mailinput
+ 	 {
+ 	 	width: 65%;
+ 	 	margin: auto;
+ 	 	padding-bottom: auto;
+ 	 }
+ /*  Ending of MAILINGLIST CSS CODE    */
+ /*  Begining of PLATFORM CSS CODE      */
+ div.platform
+ 	 {
+ 		text-align: center;
+ 		width: 25%;
+ 	 }
+ div.platform i
+ 	 {
+ 	 	text-align: center;
+ 	 	margin: 5%;
+ 	 }
+ /*  Ending of PLATFORM CSS CODE    */
+ /*  Begining of FOOTERLOGO CSS CODE      */
+ div.footerLogo
+ 	 {
+ 	 	margin: auto;
+ 	 	width: 30%;
+ 	 }
+  div.footerLogo img
+  	 {
+  	 	width: 60%;
+  	 }
+ /*  Ending of FOOTERLOGO CSS CODE    */
+ /*  Begining of UPPAGE CSS CODE      */
+ div.upPage
+ 	 {
+ 	 	width: 10%;
+ 	 	float: right;
+ 	 }
+ /*  Ending of UPPAGE CSS CODE    */
+ /*  Begining of PAYMENTMETHODS CSS CODE      */
+ div.payMethod
+	 {
+	
+		padding: 10px;
+		float: right;
+		width: 25%;
+	 }
+ /*  Ending of PAYMENTMETHODS CSS CODE    */
+ /*  Begining of COPYRIGHT CSS CODE      */
+ div.copyright
+	 {
+		position: relative;
+		bottom: 0;
+		margin: auto;
+		text-align: center;
+	 }
+ /*  Ending of COPYRIGHT CSS CODE    */
+/* Color
+	#00a690 //dark green
+	#30b193 //light green
+	#259273 //dotted line
+	#ffc66c //star 
+	#cfe2ef //bimus header
+ */
