@@ -23,6 +23,13 @@
 }
 #codeHint {
     color: aqua;
+    align-self: center;
+
+}
+#codeHintDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 #spinning-logo {
     margin-top: 5vh;
@@ -91,6 +98,7 @@ p a{
 }
 #mainbuttons{
     position: absolute;
+    left: 250px;
 }
 .a-container, .b-container{
     background:#dcdede;
@@ -98,9 +106,11 @@ p a{
     padding:5px;
 }
 .a, .b{
-    background:#eb3723;
-    border-radius:50%;
-    cursor:pointer;
+    background: #eb3723;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
 }
 .a:hover, .b:hover{
     box-shadow: inset 0 0 28px 2px #f46c5d;
@@ -126,13 +136,14 @@ p a{
 #selections-buttons{
     display: inline-block;
     position: relative;
-    top: 73px;
-    width: 176px;
+    top: 6px;
+    width: 137px;
 }
 .row{
    	margin-bottom: 10px;
    	background: #d1d1d1;
    	border-radius: 12px;
+    height: 18px;
 }
 .select , .start{
 	text-transform:uppercase;
@@ -142,33 +153,47 @@ p a{
 }
 .select{
     position:relative;
+    left: -4px;
 }
 .start{
     position:relative;
-    left:12px;
+    left:5px;
 }
 .start-button{
     position: absolute;
     background: #544848;
     margin-top: 1vh;
     cursor: pointer;
+    width: 62px;
+    height: 16px;
+    border-radius: 33px;
+    left: -6px;
 }
 .select-button{
     position: absolute;
     background: #544848;
     margin-top: 0.94vh;
     cursor: pointer;
+    width: 62px;
+    height: 16px;
+    border-radius: 33px;
 }
 .start-button:active , .select-button:active{
     box-shadow:inset 0 0 12px 0 rgba(0,0,0,.9)
 }
 #directional-buttons{
     position: absolute;
+    top: 59px;
+    left: 4px;
 }
 .middle{
-	position: absolute;
+    position: absolute;
     background: #484a49;
     border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    top: 59px;
+    left: 45px;
 }
 .left, .right, .top, .bottom {
     position: absolute;
@@ -182,20 +207,35 @@ p a{
     transform: rotate(-90deg);
     transform-origin: center right;
     border-top: 0;
+    width: 31px;
+    height: 34px;
+    left: 53px;
+    top: 33px;
 }
 .left{
     transform: rotate(90deg);
     transform-origin: center left;
     border-top: 0;
+    width: 31px;
+    height: 34px;
+    top: 33px;
+    left: 23px;
 }
 .bottom{
     border-top: 0;
     z-index: 1;
+    width: 31px;
+    height: 33px;
+    top: 87px;
+    left: 38px;
 }
 .top{
     border-bottom: 0;
     z-index: 1;
-
+    width: 31px;
+    height: 34px;
+    left: 38px;
+    top: 18px;
 }
 .left:active , .right:active , .bottom:active{
     box-shadow:inset 0 -11px 8px 0px rgba(0,0,0,.3);
@@ -231,7 +271,12 @@ p a{
         height:30px;
     }
 	.bigger{
-        height:73px !important;
+        content: '';
+        height:73px;
+        margin-bottom: 10px;
+        background: #484a49;
+        border-radius: 12px;
+        width: 180px;
     }
     .select , .start{
         margin-top:5px;
