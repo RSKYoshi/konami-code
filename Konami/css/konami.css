@@ -120,18 +120,21 @@ p a{
 }
 .a::after, .b::after{
     position: absolute;
-    bottom: -20px;
+    bottom: 2vh;
     text-transform: uppercase;
-    color: #eb3723;
+    color: black;
     font-family: arial;
     font-weight: bold;
 }
 .a::after{
-   	content: 'a';
+    content: 'a';
+    left: 5.3vw;
+    top: 2.6vh;
 }
 .b::after{
-   	content:'b';
-   	right:2px;
+    content: 'b';
+    right: 5vw;
+    top: 2.5vh;
 }
 #selections-buttons{
     display: inline-block;
