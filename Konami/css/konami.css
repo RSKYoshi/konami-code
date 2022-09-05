@@ -49,7 +49,8 @@
 	position: relative;
 	bottom: -75vh;
     height: 20vh;
-	border: thick solid black;
+    /*uncomment below to see click-area for testing*/
+	/*border: thick solid black;*/
 }
 .hidden{
     display: none;
