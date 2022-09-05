@@ -99,7 +99,7 @@ p a{
 }
 #mainbuttons{
     position: absolute;
-    left: 250px;
+    left: 60vw;
 }
 .a-container, .b-container{
     background:#dcdede;
