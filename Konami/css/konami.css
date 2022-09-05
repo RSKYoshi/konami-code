@@ -92,7 +92,7 @@ p a{
 	border:12px solid #dcdede;
     position: absolute;
     box-shadow:0 0 3px 0 rgba(0,0,0,.1);
-	width:90vw;
+	width:90.5vw;
     height:22vh;
     margin:90px auto 0 auto;
     top:50.3vh;
@@ -187,7 +187,7 @@ p a{
 }
 #directional-buttons{
     position: absolute;
-    top: 7vh;
+    top: 6vh;
     left: 0;
 }
 .middle{
