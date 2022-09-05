@@ -183,8 +183,8 @@ p a{
 }
 #directional-buttons{
     position: absolute;
-    top: 59px;
-    left: 4px;
+    top: 7vh;
+    left: 0;
 }
 .middle{
     position: absolute;
