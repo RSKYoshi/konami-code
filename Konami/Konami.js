@@ -1,8 +1,8 @@
 "USE STRICT";
 
 let userInput = "";	
-const seq = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter";
-const soundEffect1 = document.getElementById("sfx");
+const seq = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter';
+const soundEffect1 = document.getElementById('sfx');
 const leftArrowKey = document.getElementById('left-directional');
 const rightArrowKey = document.getElementById('right-directional');
 const upArrowKey = document.getElementById('up-directional');
@@ -11,9 +11,9 @@ const startKey = document.getElementById('start-button');
 const aKey = document.getElementById('a-button');
 const bKey = document.getElementById('b-button');
 const fireKey = document.getElementById('select-button');
-let controller = document.getElementById("controller");
+let controller = document.getElementById('controller');
 let pressStart = document.querySelector("#pressStart");
-let img = document.getElementById("img");
+let img = document.getElementById('img');
 
 leftArrowKey.addEventListener("touchend", convertToLeft_mobile);
 leftArrowKey.addEventListener("click", () => {body.dispatchEvent(new KeyboardEvent("keyup", {'key': 'ArrowLeft'}))});
@@ -36,7 +36,7 @@ bKey.addEventListener("click", () => {body.dispatchEvent(new KeyboardEvent("keyu
 startKey.addEventListener("touchend", convertToEnter_mobile);
 startKey.addEventListener("click", () => {body.dispatchEvent(new KeyboardEvent("keyup", {'key': 'Enter'}))});
 
-// fireKey.addEventListener("touchend", () => {body.dispatchEvent(new KeyboardEvent("keyup", {'key': 'Space'}))});
+fireKey.addEventListener("touchend", convertToSpace);
 fireKey.addEventListener("click", () => {body.dispatchEvent(new KeyboardEvent("keyup", {'key': 'Space'}))});
 
 document.addEventListener("touchend", function (e){
@@ -78,7 +78,19 @@ function convertToB_mobile(){
     userInput+="b"
     console.log(userInput);
 }
+function convertToSpace(){
+    userInput+="Space"
+    console.log(userInput);
+}
 
+function rotateLogo(){
+    let imgDiv = document.getElementById("img");
+    imgDiv.addEventListener("touchstart", function (e){
+        imgDiv.classList.remove("rotate")
+        imgDiv.setAttribute("class", "rotate");
+    })
+}
+rotateLogo();
 
 function clickToShowController(){
 	console.log("clicked");
