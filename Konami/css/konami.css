@@ -109,7 +109,7 @@ p a{
     height:22vh;
     margin:90px auto 0 auto;
     top:50.3vh;
-    box-shadow: 0 12px 12px 0 rgb(0 0 0 / 55%), #ffffff 0 -0.4vh 0 0;
+    box-shadow: 0 12px 12px 0 rgb(0 0 0 / 55%), #f5f6f5 0 -0.4vh 0 0;
     border-radius: 2vw;
 }
 #mainbuttons{
