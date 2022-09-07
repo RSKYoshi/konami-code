@@ -83,14 +83,15 @@ function convertToSpace(){
     console.log(userInput);
 }
 
-function rotateLogo(){
     let imgDiv = document.getElementById("img");
-    imgDiv.addEventListener("touchstart", function (e){
-        imgDiv.classList.remove("rotate")
-        imgDiv.setAttribute("class", "rotate");
-    })
-}
-rotateLogo();
+    imgDiv.addEventListener("touchstart", playAnimation);
+    imgDiv.addEventListener("click", playAnimation);
+
+// function playAnimation(){
+//     console.log("cl");
+//     imgDiv.style.
+// }
+
 
 function clickToShowController(){
 	console.log("clicked");
