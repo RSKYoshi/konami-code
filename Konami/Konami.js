@@ -91,8 +91,6 @@ function convertToSpace(){
 //     console.log("cl");
 //     imgDiv.style.
 // }
-
-
 function clickToShowController(){
 	console.log("clicked");
     controller.classList.toggle("hidden");
