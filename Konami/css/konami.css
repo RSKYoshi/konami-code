@@ -139,6 +139,7 @@ p a{
 /*.a:hover, .b:hover{*/
 /*    box-shadow: inset 0 0 28px 2px #f46c5d;*/
 /*}*/
+
 .a:active, .b:active{
     box-shadow: inset 0 0 28px 2px rgba(0,0,0,.5)
 }
@@ -190,6 +191,7 @@ p a{
     color:#d92214;
     font-weight:bold;
     display:inline-block;
+    white-space:nowrap;
 }
 .select{
     position:relative;
