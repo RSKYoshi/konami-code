@@ -196,7 +196,7 @@ p a{
 }
 .start{
     position:relative;
-    left:5px;
+    right: -4px;
 }
 .start-button{
     position: absolute;
