@@ -191,7 +191,6 @@ p a{
     color:#d92214;
     font-weight:bold;
     display:inline-block;
-    white-space:nowrap;
 }
 .select{
     position:relative;
