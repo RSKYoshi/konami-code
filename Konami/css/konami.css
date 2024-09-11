@@ -196,7 +196,7 @@ p a{
 }
 .start{
     position:relative;
-    right: -4px;
+    right: 5px;
 }
 .start-button{
     position: absolute;
@@ -206,9 +206,9 @@ p a{
     width: 2.5rem;
     height: 1rem;
     border-radius: 1rem;
-    left: 0.4rem;
+    left: 2.5rem;
     box-shadow: #13110c 0 3px 2px 0, #2b232069 0 -1px 0 0;
-    top: 1.4rem;
+    top: 0.4rem;
 }
 .select-button{
     position: absolute;
