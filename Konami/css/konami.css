@@ -186,20 +186,22 @@ p a{
     border-radius: 5px;
     height: 18px;
 }
-.select, .start{
+.selectStartFont{
 	text-transform:uppercase;
     color:#d92214;
     font-weight:bold;
     display:inline-block;
 }
-.select{
+
+.selectStartPosition{
     position:relative;
     left: -4px;
 }
-.start{
-    position:relative;
-    right: -4px;
-}
+/*.start{*/
+/*    position:relative;*/
+/*    right: -4px;*/
+/*}*/
+
 .start-button{
     position: absolute;
     background: #2b2320;
