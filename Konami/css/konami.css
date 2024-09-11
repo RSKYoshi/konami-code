@@ -206,9 +206,9 @@ p a{
     width: 2.5rem;
     height: 1rem;
     border-radius: 1rem;
-    left: 2.7rem;
+    left: 3rem;
     box-shadow: #13110c 0 3px 2px 0, #2b232069 0 -1px 0 0;
-    top: 0.3rem;
+    top: 0.1rem;
 }
 .select-button{
     position: absolute;
