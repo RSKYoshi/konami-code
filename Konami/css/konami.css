@@ -191,7 +191,7 @@ p a{
 #selectStartFont{
 	text-transform:uppercase;
     color:#d92214;
-    font-weight:bold;
+    /*font-weight:bold;*/
     display:inline-block;
     position:relative;
     left: -4px;
