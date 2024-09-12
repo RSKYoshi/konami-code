@@ -190,6 +190,7 @@ p a{
 /*#textStyleAndPositionOverride .*/
 #selectStartFont{
 	text-transform:uppercase;
+    font-size: 0.5rem;
     color:#d92214;
     font-weight:bold;
     display:inline-block;
