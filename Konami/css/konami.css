@@ -186,16 +186,19 @@ p a{
     border-radius: 5px;
     height: 18px;
 }
-.selectStartFont{
+
+/*#textStyleAndPositionOverride .*/
+#selectStartFont{
 	text-transform:uppercase;
     color:#d92214;
     font-weight:bold;
     display:inline-block;
-}
-
-.selectStartPosition{
     position:relative;
     left: -4px;
+}
+
+#test{
+    color: pink;
 }
 /*.start{*/
 /*    position:relative;*/
