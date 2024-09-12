@@ -189,12 +189,13 @@ p a{
 
 /*#textStyleAndPositionOverride .*/
 #selectStartFont{
-	/*text-transform:uppercase;*/
+	text-transform:uppercase;
     color:#d92214;
     font-weight:bold;
     display:inline-block;
     position:relative;
     left: -4px;
+    white-space: nowrap;
 }
 
 #test{
